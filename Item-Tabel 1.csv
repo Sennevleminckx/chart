@@ -1,0 +1,317 @@
+id;code;model_id;is_in_survey;number_of_values;aggregation_method_id;periodicity;name;description;weight;calculation;is_disabled;reverse_value;is_in_radar;max_threshold;min_threshold;graph_type;composite_id;subdomain_id
+1;HR1;1;FALSE;1;POST01;12;> 7 werkdagen;Het % medewerkers met minstens één keer meer dan 7 opeenvolgende werkdagen.;1;;FALSE;TRUE;;;;COLUMN;1;18
+2;HR2;1;FALSE;1;POST01;12;> 3 nachten;Het % medewerkers met minstens één keer minder dan 3 opeenvolgende nachten.;1;;FALSE;TRUE;;;;COLUMN;1;18
+3;HR3;1;FALSE;1;POST01;12;Losse dienst;Het % medewerkers met minstens één “losse dienst” (een werkdag met minstens twee vrije dagen ervoor en erna);1;;FALSE;TRUE;;;;COLUMN;1;18
+4;HR4;1;FALSE;1;POST01;12;1 dag vrij;Het % medewerkers met minstens één keer slechts één dag vrij tussen twee dienstblokken van elk minstens 3 werkdagen.;1;;FALSE;TRUE;;;;COLUMN;1;18
+5;HR5;1;FALSE;1;POST01;12;Afwijkend patroon;Het % medewerkers met minstens één keer een afwijkend shift rotatiepatroon tussen opeenvolgende werkdagen (vroege na late, late na nacht, nacht na vroege);1;;FALSE;TRUE;;;;COLUMN;1;18
+6;HR6;3;FALSE;5;STATRATIO01;12;Overuren;Overuren (in positieve of negatieve balans, meeruren of minuren);1;;FALSE;TRUE;FALSE;;;LINE;18;18
+7;HR7;3;FALSE;1;POST01;12;Structurele overuren;Het aantal medewerkers met structurele overuren vergeleken met de vorige periode;1;;FALSE;TRUE;;;;COLUMN;18;18
+8;HR8;3;FALSE;1;POST01;12;Ziek;Het % medewerkers met minstens één ziektedag.;1;;FALSE;TRUE;;;;COLUMN;2;18
+9;HR9;1;FALSE;1;POST01;12;Sociaal verlof;Het % medewerkers met minstens één dag omstandigheidsverlof of sociaal verlof.;1;;FALSE;TRUE;;;;COLUMN;2;18
+10;HR10;1;FALSE;1;POST01;12;Thematisch verlof;Het % medewerkers met minstens één dag loopbaanonderbreking, tijdskrediet of thematische verloven.;1;;FALSE;TRUE;;;;COLUMN;2;18
+11;HR11;1;FALSE;6;STATRATIO04;12;Opleiding;Aantal uren opleiding per medewerker (zowel intern als extern);0;;TRUE;FALSE;FALSE;;;LINE;;14
+12;HR12;3;FALSE;1;NO;4;;Vrijwillige turnover (medewerker die zelf beslist om ontslag te nemen);1;;FALSE;TRUE;;;;COLUMN;3;14
+13;HR13;1;FALSE;1;NO;4;Onvrijwillige turnover;Onvrijwillige turnover (ontslagen, aflopen van contracten);1;;FALSE;TRUE;;;;COLUMN;3;14
+14;HR14;1;FALSE;1;NO;4;Turnover;Totale turnover;1;;FALSE;TRUE;;;;COLUMN;3;14
+15;HR15;1;FALSE;6;STATRATIO02;4;Bradford factor;Bradford factor;1;;FALSE;TRUE;TRUE;80;40;COLUMN;;14
+16;HR16;1;FALSE;5;STATRATIO01;4;Leeftijd;Leeftijd van het zorgteam;0;;TRUE;FALSE;FALSE;;;BOXPLOT;;14
+17;HR17;1;FALSE;5;STATRATIO01;4;Anciënniteit in team;Ancienniteit binnen het team;1;;FALSE;FALSE;TRUE;10;5;BOXPLOT;;14
+18;HR18;1;FALSE;2;PERC01;4;Vpk - Bachelor;Percentage verpleegkundigen met minstens een bachelordiploma;1;;FALSE;FALSE;;;;LINE;4;14
+19;HR19;1;FALSE;2;PERC01;4;Vpk - Master;Percentage verpleegkundigen met minstens een masterdiploma;1;;FALSE;FALSE;;;;LINE;4;14
+20;HR20;1;FALSE;2;POST01;4;Beginnend;Percentage beginnende medewerkers;0;;FALSE;FALSE;;;;LINE;5;14
+21;HR21;1;FALSE;1;POST01;4;Gevorderd;Percentage gevorderde medewerkers;0,5;;FALSE;FALSE;;;;LINE;5;14
+22;HR22;1;FALSE;1;POST01;4;Expert;Percentage expert medewerkers;1;;FALSE;FALSE;;;;LINE;5;14
+23;HR23;1;FALSE;3;PERC02;4;Deeltijds;Percentage deeltijdse medewerkers (<100%);0;;TRUE;TRUE;FALSE;;;LINE;;14
+24;HR24;1;FALSE;1;POST01;4;Reïntegratie;Percentage teamleden met reintegratIe na langdurig afwezigheid;0;;TRUE;TRUE;FALSE;;;LINE;;14
+25;HR25;1;FALSE;2;PROP;1;Ontslagen vs aanwervingen;Proportie ontslagen / aanwervingen;0;;TRUE;FALSE;FALSE;;;COLUMN;;14
+26;HR26;1;FALSE;6;SOM;12;Gebudgetteerde FTE;Gebudgetteerde FTE's per zorgteam per maand;0;;TRUE;FALSE;FALSE;;;LINE;;14
+27;HR27;1;FALSE;6;POST04;12;Geplande uren;Geplande uren per zorgteam per maand;0;;TRUE;FALSE;FALSE;;;LINE;;14
+28;HR28;1;FALSE;6;POST04;12;Effectieve uren;Effectief uitgevoerde uren per zorgteam per maand;0;;TRUE;FALSE;FALSE;;;LINE;;14
+29;HR29;1;FALSE;5;STATRATIO01;1;Tijdsduur vacatures;Tijdsduur van het openstaan van vacatures;0;;TRUE;TRUE;FALSE;;;LINE;;14
+30;HR30;1;FALSE;1;POST01;4;Zorgkundigen;Percentage zorgkundigen;1;;FALSE;FALSE;;;;LINE;4;14
+31;HR31;1;FALSE;1;POST01;4;Logistieke Mw;Percentage logistieke medewerkers;1;;FALSE;FALSE;;;;LINE;4;14
+32;HR32;1;FALSE;1;POST01;4;Administratieve Mw;Percentage administratieve medewerkers;1;;FALSE;FALSE;;;;LINE;4;14
+33;HR33;1;FALSE;1;POST01;4;Therapeuten;Percentage therapeuten (psychologen, kinesisten, …);1;;FALSE;FALSE;;;;LINE;4;14
+34;HR34;1;FALSE;6;SOM;12;Teamgrootte;Teamgrootte in aantallen;0;;TRUE;FALSE;;;;LINE;4;14
+132;HR35;1;FALSE;2;PERC01;4;VV - Bachelor;"Percentage vroedkundigen met minstens een bachelordiploma
+Inclusie: vroedkundigen met een vast contract werkzaam gedurende het betreffende kwartaal
+Exclusie:Interim-krachten";1;;FALSE;FALSE;;;;LINE;4;14
+133;HR36;1;FALSE;2;PERC01;4;VV - Master;"Percentage vroedkundigen met minstens een masterdiploma
+Inclusie: vroedkundigen met een vast contract werkzaam gedurende het betreffende kwartaal
+Exclusie:Interim-krachten";1;;FALSE;FALSE;;;;LINE;4;14
+134;HR37;1;FALSE;1;POST01;12;> 3 dagen (12u);"Het % medewerkers met meer dan drie opeenvolgende dagdiensten (12-uren systeem)
+Opmerking: dit betreft data over de definitieve rooster (na wijzigingen)";1;;FALSE;TRUE;;;;COLUMN;1;18
+135;HR38;1;FALSE;1;POST01;12;> 4 dagen (12u);"Het % medewerkers met meer dan vier 12-uren shiften per week
+Opmerking: dit betreft data over de definitieve rooster (na wijzigingen)";1;;FALSE;TRUE;;;;COLUMN;1;18
+142;HR39;1;FALSE;1;NO;1;Aantal uren per jaar;Het aantal uren per jaar voor een voltijdse medewerker (38-uren week = 1688 uren per jaar);0;;TRUE;FALSE;FALSE;;;LINE;;14
+35;APP1;1;FALSE;5;STATRATIO01;1;Levensduur;Gemiddelde verlopen levensduur (als % van voorziene levensduur) van beschikbare apparatuur op de afdeling;1;;FALSE;TRUE;;;;LINE;19;2
+36;APP2;1;FALSE;1;NO;1;Herstelaanvragen;Het aantal herstelaanvragen of werkbonnen gedurende het afgelopen jaar.;0;;TRUE;TRUE;;;;LINE;19;2
+37;APP3;1;FALSE;4;STATRATIO03;1;Openstaande aanvragen;Gemiddelde tijd van alle openstaande herstelaanvragen of werkbonnen gedurende het afgelopen jaar.;0;;TRUE;TRUE;;;;LINE;19;2
+38;APP4;1;FALSE;2;PERC01;1;Zonder onderhoud;Het percentage toestellen zonder onderhoud gedurende het afgelopen jaar.;0;;TRUE;TRUE;;;;LINE;19;2
+39;STAF1;1;FALSE;1;NO;365;HpPD - Vpk;Hours per patient day - verpleegkundigen;1;;FALSE;FALSE;;;;LINE;6;14
+40;STAF2;1;FALSE;1;NO;365;HpPD - Zorgkundigen;Hours per patient day - zorgkundigen;0;;TRUE;FALSE;;;;LINE;6;14
+41;STAF3;1;FALSE;1;NO;365;HpPD - Logistiek;Hours per patient day - logistieke medewerkers;0;;TRUE;FALSE;;;;LINE;6;14
+42;STAF4;1;FALSE;1;NO;365;HpPD - Admin;Hours per patient day - administratieve medewerkers;0;;TRUE;FALSE;;;;LINE;6;14
+43;STAF5;1;FALSE;1;NO;365;HpPD - Therapeuten;Hours per patient day - therapeuten in loonverband;0;;TRUE;FALSE;;;;LINE;6;14
+44;STAF6;1;FALSE;1;NO;365;HpPD - Opvoeders;Hours per patient day - opvoeders;0;;TRUE;FALSE;;;;LINE;6;14
+45;STAF7;1;FALSE;5;STATRATIO01;365;Zorgvolume;Zorgvolume per zorgverlener per dag;0;;TRUE;TRUE;FALSE;;;LINE;;14
+46;STAF8;2;FALSE;2;PROP;365;patiëntenturnover;Patiënten turnover per dag;1;;FALSE;TRUE;FALSE;;;LINE;;9
+47;ZMD1;1;FALSE;5;STATRATIO01;12;Wissels;Het gemiddeld aantal wissels of aanpassingen per maand aan de gefinaliseerde uurrooster (per medewerker);1;;FALSE;TRUE;TRUE;4;0;COLUMN;;18
+48;ZMD2;3;FALSE;3;SOM;365;Niet afdelingseigen zorgverleners;Het aantal “niet afdelingseigen” zorgverleners (bv. mobiele equipe) werkzaam op de afdeling (per 24u);0;;TRUE;TRUE;FALSE;;;COLUMN;;14
+49;ZMD3;1;FALSE;6;DISTR;365;Niet vervangen zieken;Het aantal zieken/afwezigen die niet vervangen werden per categorie zorgverlener (tekorten/ongeplande afwezigheden) (per 24u);0;;TRUE;TRUE;FALSE;;;COLUMN;;14
+50;ZMD4;2;FALSE;5;DISTR02;365;Verdeling shiften;De verdeling personeel per shift (V/L/N/andere) als de afdeling met een shiftensysteem werkt (per 24u);0;;TRUE;FALSE;FALSE;;;;;18
+51;ZMD5;2;FALSE;1;NO;365;Technische onderzoeken;Niet geplande technische onderzoeken met nood patiëntentransfer;0;;TRUE;TRUE;FALSE;;;COLUMN;;3
+52;ZMD6;2;FALSE;1;BOOL;365;Mobiele equipe;Onverwachte inzet van mobiele equipe of andere externe hulp beslist de dag zelf;0;;TRUE;TRUE;FALSE;;;COLUMN;;18
+53;ZMD7;2;FALSE;3;DISTR03;12;MUG;Medisch Urgentie Groep (MUG) oproepen per maand;0;;TRUE;TRUE;FALSE;;;COLUMN;;19
+54;ZMD8;2;FALSE;6;DISTR;365;Tekorten;Tekorten aan personen volgens de directe leidinggevenden;0;;TRUE;TRUE;FALSE;;;COLUMN;;14
+130;ZMD9;2;FALSE;1;NO;365;Pre-Hos MUG;Pre-hospitale MUG-oproepen (Medische Urgentie Groep) (per 24u);1;;FALSE;TRUE;FALSE;;;COLUMN;7;14
+131;ZMD10;2;FALSE;1;NO;365;Pre-Hos PIT;Pre-hospitale PIT-oproepen (Medische Urgentie Groep) (per 24u);1;;FALSE;TRUE;FALSE;;;COLUMN;7;14
+55;SCORE_KATZ;1;FALSE;5;STATRATIO01;12;KATZ;KATZ-schaal;0;;TRUE;FALSE;FALSE;;;LINE;;3
+56;SCORE_SJI;1;FALSE;5;STATRATIO01;12;San Joaquin;San Joaquin index;0;;TRUE;FALSE;FALSE;;;COLUMN;;3
+57;SCORE_TISS-28;1;FALSE;6;STATRATIO04;365;TISS-28;Therapeutic Intervention Scoring System-28 (TISS-28);0;;TRUE;FALSE;FALSE;;;LINE;;3
+58;SCORE_APACHE;2;FALSE;1;NO;365;Type_APACHE;Acute Physiology and Chronic Health Disease Classification System - (1) APACHE-II, (2) APACHE-III, (3) APACHE_IV;0;;TRUE;FALSE;FALSE;;;;;3
+59;SCORE_APACHE;2;FALSE;5;STATRATIO01;365;APACHE;Acute Physiology and Chronic Health Disease Classification System;0;;TRUE;FALSE;FALSE;;;LINE;;3
+60;SCORE_MTS;2;FALSE;5;DISTR;365;Triage (kleur);Manchester triage systeem - aantal patienten (kleurcode);0;;TRUE;TRUE;FALSE;;;GROUPED_COLUMN;;3
+61;SCORE_MTS;2;FALSE;5;STATRATIO01;365;Triage (Score);Manchester triage systeem - score;0;;TRUE;TRUE;FALSE;;;LINE;;3
+129;SCORE_ESI_level;2;FALSE;5;DISTR;365;ESI-triage;Emergency Severity Index (ESI)- triage systeem - Aantal patiënten per level;0;;TRUE;TRUE;FALSE;;;GROUPED_COLUMN;;3
+62;MZG1;2;FALSE;5;STATRATIO01;12;Leeftijd;Demografische patiëntengegevens leeftijd;1;;FALSE;TRUE;TRUE;105;65;BOXPLOT;;9
+63;MZG2;2;FALSE;2;STATRATIO01;12;Gewicht;Demografische patiëntengegevens gewicht;1;;FALSE;TRUE;TRUE;150;100;BOXPLOT;;9
+64;MZG3;2;FALSE;2;DISTR;4;Geslacht;Demografische patiëntengegevens geslacht;0;;TRUE;FALSE;FALSE;;;GROUPED_COLUMN;;9
+65;MZG_R100;2;FALSE;6;PERC01;4;Emotionele crisis;% patiënten met zorgen met betrekking tot een emotionele of psychiatrische crisis;1;(Data_1/Data_2)*100;FALSE;TRUE;FALSE;;;COLUMN;16;3
+66;MZG_B200;5;FALSE;2;DISTR02;4;Urinaire uitscheiding;Zorgen met betrekking tot de urinaire uitscheiding;1;((Data_3 + Data_4)/Data_5)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+67;MZG_B300;2;FALSE;5;PERC01;4;Blaassondage;Uitvoeren blaassondage;1;(Data_1/Data_2)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+68;MZG_B400;2;FALSE;4;DISTR02;4;Fecale uitscheiding;Zorgen met betrekking tot de fecale uitscheiding;1;((Data_3 + Data_4)/Data_5)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+69;MZG_B500;2;FALSE;4;DISTR02;4;Lavement;Toediening lavement en/of manueel verwijderen van fecalomen en/of plaatsen van een rectale sonde/canule;1;((Data_1 + Data_2 + Data_3) / Data_4) *100;FALSE;TRUE;FALSE;;;LINE;16;3
+70;MZG_C100;2;FALSE;5;DISTR02;4;Installatie;De installatie en/of het verplaatsen van een patiënt binnen de afdeling of kamer;1;((Data_2 + Data_3)/Data_4)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+71;MZG_D100;2;FALSE;2;DISTR02;4;Per os voeding;Zorgen bij de voeding per os;1;((Data_3 + Data_4)/Data_5)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+72;MZG_D300;2;FALSE;2;PERC01;4;Enterale voeding;Zorgen met betrekking tot de toediening van enterale voeding via een sonde;1;(Data_1/Data_2)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+73;MZG_D400;2;FALSE;3;PERC01;4;TPN;Zorgen met betrekking tot de opvolging van de totale parenterale nutritie (TPN);1;(Data_1/Data_2)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+74;MZG_E100;2;FALSE;3;DISTR02;4;Pijn;Symptoommanagement: pijn;1;((Data_1/Data_2)/Data_3)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+75;MZG_E200;2;FALSE;3;DISTR02;4;Nausea;Symptoommanagement: nausea;1;((Data_1/Data_2)/Data_3)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+76;MZG_E400;2;FALSE;5;DISTR02;4;Sedatie;Symptoommanagement: sedatie;1;((Data_1/Data_2)/Data_3)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+77;MZG_F100;2;FALSE;2;DISTR02;4;Hygiënische zorgen;Hygiënische zorgen;1;((Data_3 + Data_4)/Data_5)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+78;MZG_F300;2;FALSE;2;PERC01;4;Dagkledij;Hulp bij dagkledij;1;(Data_1/Data_2)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+79;MZG_F500;2;FALSE;6;PERC01;4;Mondzorg;Bijzondere mondzorg;1;(Data_1/Data_2)*100;FALSE;TRUE;FALSE;;;LINE;16;3
+80;MZG_G100;3;FALSE;5;DISTR02;12;Vochtbalans;Opvolging van de voedings- of vochtbalans;1;((Data_3 + Data_4 + Data_5) / Data_6) *100;FALSE;TRUE;FALSE;;;LINE;16;3
+81;MZG_ROM;3;FALSE;5;STATRATIO01;12;ROM;"Per afdeling gebruikt BNuT de  Risk Of Mortality (ROM) voor elk verblijf op deze afdeling van het afgelopen semester.
+Deze worden niet meegestuurd als onderdeel van de MZG registratie maar kunnen wel berekend worden met de beschikbare data.";1;Data_1;FALSE;TRUE;FALSE;;;CANDLESTICK;20;3
+82;MZG_SOI;3;FALSE;6;STATRATIO01;12;SOI;"Per afdeling gebruikt BNuT de Severity of Ilness (SOI) voor elk verblijf op deze afdeling van het afgelopen semester.
+Deze worden niet meegestuurd als onderdeel van de MZG registratie maar kunnen wel berekend worden met de beschikbare data.";1;Data_1;FALSE;TRUE;FALSE;;;CANDLESTICK;20;3
+83;VZ1;1;FALSE;5;DISTR02;12;NEWS;NEWS: National Early Warning Score;1;(((Data_2*0) + (Data_3*0,5) + Data_4 + (Data_5 * 1,5))/3)/Data_1)*10;FALSE;TRUE;TRUE;5;0;GROUPED_COLUMN;;3
+84;VZ2;1;FALSE;2;PERC01;12;Verhoogd toezicht;Aantal patiënten met een verhoogd toezicht (psychose, middelenmisbruik, suiciderisico, ...);1;;FALSE;FALSE;FALSE;;;COLUMN;8;3
+85;VZ3;1;FALSE;2;PERC01;12;Verhoogd toezicht;Aantal residenten met een verhoogd toezicht (wegloopgedrag, ernstig cognitief beperkt);1;;FALSE;TRUE;FALSE;;;COLUMN;8;3
+86;VZ4;2;FALSE;2;PERC01;12;Sepsis;Aantal patiënten met een vermoeden van of bevestigde sepsis;0;;TRUE;TRUE;FALSE;;;COLUMN;;3
+87;VZ5;1;FALSE;1;POST06;12;Terminale zorg;Gemiddeld aantal patiënten met goedgekeurd palliatief statuut (+ comfortzorg);0;;TRUE;TRUE;FALSE;;;COLUMN;;3
+88;VZ6;1;FALSE;1;NO;4;Agressie;Oproepen agressieteam per maand;0;;TRUE;TRUE;FALSE;;;COLUMN;9;3
+89;VZ7;1;FALSE;1;NO;2;Agressiemeldingen;Het aantal officieel geregistreerde agressiemeldingen per kwartaal;1;;FALSE;TRUE;FALSE;;;COLUMN;9;3
+90;VZ8;1;FALSE;5;NO;12;Peer support;Aantal officieel geregistreerde peer support aanvragen door zorgverleners van het ziekenhuis per 6 maanden;0;;TRUE;TRUE;FALSE;;;COLUMN;;20
+137;VZ9;2;FALSE;;NO;365;Upgrading van zorg;Aantal patiënten met nood aan upgrading van zorg (transfer naar ICU, ander ziekenhuis,…);1;;FALSE;TRUE;FALSE;;;COLUMN;;3
+138;VZ10;2;FALSE;;NO;365;High flow zuurstof;Aantal patiënten met nood aan high flow zuurstoftherapie of niet invasieve beademing;1;;FALSE;TRUE;FALSE;;;LINE;21;3
+139;VZ11;2;FALSE;;NO;365;Invasieve beademing;Aantal patiënten met nood aan invasieve beademing;1;;FALSE;TRUE;FALSE;;;LINE;21;3
+140;VZ12;3;FALSE;;NO;365;ECMO;Aantal patiënten met nood aan extracorporele membraan oxygenatie (ECMO);1;;FALSE;TRUE;FALSE;;;LINE;21;3
+141;VZ13;3;FALSE;;NO;365;CVVH;Aantal patiënten met nood aan continue niervervangende therapie (CVVH);1;;FALSE;TRUE;FALSE;;;LINE;21;3
+91;OPN1;3;FALSE;1;POST03;365;Vrije bedden 8u;Het totaal aantal vrije bedden of plaatsen op de afdeling - 8:00;1;;FALSE;FALSE;FALSE;;;LINE;10;9
+92;OPN2;3;FALSE;1;POST03;365;Vrije bedden 20u;Het totaal aantal vrije bedden of plaatsen op de afdeling - 20:00;1;;FALSE;FALSE;FALSE;;;LINE;10;9
+93;OPN3;3;FALSE;2;PERC01;52;Overlijdens;Het totaal aantal overlijdens;1;/OPN_7)*100;FALSE;TRUE;TRUE;4;0;LINE;;9
+94;OPN4;3;FALSE;2;PERC01;365;‘Dwarsliggers’;Het totaal aantal afdeling-oneigenlijke opnames (patiënten die niet behoren tot de specialiteit(en) van de betreffende afdeling).;1;/OPN_7)*100;FALSE;TRUE;TRUE;20;0;LINE;;3
+95;OPN5;3;FALSE;1;NO;365;Aantal patiënten 24u;Het totaal aantal patiënten die gedurende de hele dag opgenomen waren op de afdeling ( 24u);0;;TRUE;FALSE;FALSE;;;LINE;;9
+96;OPN6;3;FALSE;1;NO;365;Aantal patiënten 12u;Het totaal aantal patiënten die langer dan 12u aanwezig waren op de afdeling (per 24u);0;;TRUE;FALSE;FALSE;;;LINE;;9
+97;OPN7;3;FALSE;1;NO;365;Opnames;Het totaal aantal opnames (per 24u);1;;FALSE;FALSE;FALSE;;;LINE;23;9
+98;OPN8;3;FALSE;1;NO;365;Ontslagen;Het totaal aantal ontslagen patiënten (per 24u);1;;FALSE;FALSE;FALSE;;;LINE;23;9
+99;OPN9;3;FALSE;1;POST02;365;Geplande opnames;Geplande opnames gedurende 24u;1;/OPN_7)*10;FALSE;FALSE;FALSE;;;LINE;11;3
+100;OPN10;3;FALSE;1;POST02;365;Ongeplande opnames;Ongeplande opnames gedurende 24u;1;;FALSE;TRUE;FALSE;;;LINE;11;3
+101;OPN11;3;FALSE;1;POST02;365;Crisisopnames;Crisisopnames;1;;FALSE;TRUE;FALSE;;;COLUMN;11;3
+126;OPN12;3;FALSE;1;NO;365;Aantal bedden;Totaal aantal bedden op de afdeling (zowel gefinancierde als niet gefinancierde);1;;FALSE;FALSE;FALSE;;;;10;9
+127;OPN13;3;FALSE;1;NO;365;Inschrijvingen;Aantal inschrijvingen spoedgevallen;1;;FALSE;TRUE;TRUE;140;90;LINE;;9
+128;OPN14;2;FALSE;1;NO;365;Opnames;Aantal opnames in het ziekenhuis vanop spoedgevallen (per 24u);1;;FALSE;TRUE;TRUE;20;10;LINE;;9
+136;OPN15;2;FALSE;1;NO;365;Geboortes;Aantal geboortes (per 24u);1;;FALSE;TRUE;FALSE;;;LINE;;9
+102;EV1;2;FALSE;1;NO;4;Incidenten;Totaal aantal incidenten en bijna-incidenten;1;(EV 1 - EV 2)*1;FALSE;TRUE;FALSE;;;GROUPED_COLUMN;12;19
+103;EV2;2;FALSE;1;NO;4;Bijna-incidenten;Totaal aantal bijna-incidenten;0,5;;FALSE;TRUE;FALSE;;;COLUMN;12;19
+104;EV3;2;FALSE;1;NO;4;HABSI;HABSI indicator: Laboratorium bevestigde bloedstroominfecties (BSI) die 2 dagen of later na ziekenhuisopname optreden per 10.000 hospitalisatiedagen per jaar.;1;/OPN_7kwartaal;FALSE;TRUE;FALSE;;;COLUMN;13;19
+105;EV4;2;FALSE;1;NO;4;CLABSI;CLABSI indicator: HA-BSI die als vermoedelijke oorsprong een centraal veneuze katheter (CVC) hebben per 10.000 hospitalisatiedagen.;1;/OPN_7kwartaal;FALSE;TRUE;FALSE;;;COLUMN;13;19
+106;EV5;2;FALSE;1;NO;4;CAUTI;CAUTI: catheter-associated urinary tract infections infectie bij patiënt met blaassonde langer dan 2 dagen ter plaatse, per 1000 katheterdagen;1;/OPN_7kwartaal;FALSE;TRUE;FALSE;;;COLUMN;13;19
+107;EV6;2;FALSE;1;NO;4;Blaassonde;Aantal patiënten met blaassonde meer dan 2 dagen ter plaatse;0;;TRUE;TRUE;FALSE;;;COLUMN;14;19
+108;EV7;2;FALSE;5;STATRATIO01;4;Duur blaassonde;Gemiddelde duur in aantal dagen dat een patiënt een transurethrale blaassonde heeft;1;;FALSE;TRUE;FALSE;;;LINE;14;19
+109;EV8;1;FALSE;2;PERC01;4;Decubitus;Decubitus: aantal patiënten die doorligwonden ontwikkelen tijdens de opname per aantal opnames;1;Data_1/Data_2;FALSE;TRUE;FALSE;;;COLUMN;15;19
+110;EV9;1;FALSE;2;PERC01;4;Valincident;Valincidenten: aantal patiënten met een valincident, per aantal opnames;1;Data_1/Data_2;FALSE;TRUE;FALSE;;;COLUMN;15;19
+111;EV10;1;FALSE;2;PERC01;4;Medicatiefouten;Medicatiefouten: aantal medicatiefouten, per aantal opnames;1;Data_1/Data_2;FALSE;TRUE;FALSE;;;COLUMN;15;19
+112;EV11;1;FALSE;2;PERC01;4;MRSA;Hospital-associated methicillin resistant S. aureus (MRSA);1;Data_1/Data_2;FALSE;TRUE;FALSE;;;COLUMN;13;19
+113;EV12;1;FALSE;2;PERC01;4;ESBL;Hospital-associated Extended-spectrum bèta-lactamase (ESBL);1;Data_1/Data_2;FALSE;TRUE;FALSE;;;COLUMN;13;19
+114;EV13;1;FALSE;2;PERC01;4;HAP;Healthcare-associated pneumonia (HAP);1;Data_1/Data_2;FALSE;TRUE;FALSE;;;COLUMN;13;19
+115;EV14;1;FALSE;2;PERC01;1;Handhygiëne;Handhygiëne;1;(Data_1/Data_2)*10;FALSE;FALSE;TRUE;;;COLUMN;;19
+116;EV15;1;FALSE;2;PERC01;2;PatiëntID;Patiëntidentificatie -het percentage gecontroleerde patiënten met een correct en volledig identificatiebandje;1;(Data_1/Data_2)*10;FALSE;FALSE;TRUE;;;COLUMN;;19
+117;VIP1;1;FALSE;4;DISTR;2;VIP1;Patiëntervaring – relatie met zorgteam Vraag 12;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+118;VIP2;1;FALSE;4;DISTR;2;VIP2;Patiëntervaring – relatie met zorgteam Vraag 13;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+119;VIP3;1;FALSE;4;DISTR;2;VIP3;Patiëntervaring – relatie met zorgteam Vraag 14;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+120;VIP4;1;FALSE;4;DISTR;2;VIP4;Patiëntervaring – relatie met zorgteam Vraag 15;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+121;VIP5;2;FALSE;4;DISTR;2;VIP5;Patiëntervaring – relatie met zorgteam Vraag 16;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+122;VIP6;2;FALSE;4;DISTR;2;VIP6;Patiëntervaring – relatie met zorgteam Vraag 17;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+123;VIP7;2;FALSE;4;DISTR;2;VIP7;Patiëntervaring – relatie met zorgteam Vraag 18;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+124;VIP8;2;FALSE;4;DISTR;2;VIP8;Patiëntervaring – relatie met zorgteam Vraag 19;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+125;VIP9;2;FALSE;4;DISTR;2;VIP9;Patiëntervaring – relatie met zorgteam Vraag 20;1;;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;17;10
+142;WGK1;2;FALSE;4;DISTR;12;Rendement;Rendement: het aantal bezoeken die worden gepresteerd per 8u met zorgen. ;1;;FALSE;TRUE;TRUE;30;24;LINE;;14
+143;WGK2;2;FALSE;5;DISTR02;12;Werkbelasting;Gemiddelde werkbelasting per toer;1;;FALSE;TRUE;TRUE;85;50;LINE;;3
+144;WGK3;1;FALSE;1;POST07;12;Risico op geweld;Gemiddeld aantal patiënten met 'risico op geweld';1;;FALSE;FALSE;FALSE;;;LINE;;10
+145;WGK4;1;FALSE;5;SOM;12;Zorgzwaarte;Zorgzwaarte: aantal patienten per profiel (-1, A, B, C, nomenclatuur);1;;FALSE;FALSE;FALSE;;;PIE_CHART;;3
+146;WGK5;1;FALSE;3;STATRATIO01;4;Verdeling personeel;De verdeling personeel per dag (VM / NM / AV);1;;FALSE;FALSE;FALSE;;;;;18
+147;WGK6;3;FALSE;3;NO;12;Continuïteit;Continuïteit;1;(DATA_1 + DATA_2 + DATA_3 / 3) *100;FALSE;FALSE;TRUE;70;30;LINE;;23
+148;WGK7;2;FALSE;4;DISTR;12;Wachten;Gemiddeld aantal wachten per medewerker;1;;FALSE;TRUE;TRUE;4;0;LINE;;18
+149;WGK8;2;FALSE;4;DISTR;12;Opgeroepen wachten;Gemiddeld aantal opgeroepen wachten;1;;FALSE;TRUE;TRUE;4;0;LINE;;18
+150;WGK9;2;FALSE;4;DISTR;12;Onderbroken shiften;Gemiddeld aantal onderbroken shiften;1;;FALSE;TRUE;FALSE;;;LINE;;18
+151;WGK10;3;FALSE;1;POST06;4;Niet-ernstige incidenten;Aantal niet-ernstige incidenten;1;;FALSE;TRUE;FALSE;;;LINE;26;19
+152;WGK11;3;FALSE;1;POST06;4;Ernstige incidenten;Aantal ernstige incidenten;1;;FALSE;TRUE;FALSE;;;LINE;26;19
+153;WGK12;3;FALSE;5;POST06;4;Incidenten in aanwezigheid;Aantal incidenten in aanwezigheid/betrokkenheid VK/ZK;1;;FALSE;TRUE;FALSE;;;LINE;27;19
+154;WGK13;1;FALSE;1;POST06;12;Infectieziekten;Aantal geregistreerde patienten met infectieziekten;1;;FALSE;TRUE;TRUE;40;0;LINE;;3
+155;WGK14;3;FALSE;1;POST06;12;Niet-geplande transfers;Aantal niet-geplande transfers naar het ziekenhuis;1;;FALSE;TRUE;TRUE;10;0;LINE;;9
+156;WGK15;1;FALSE;2;SOM + POST06;12;Opstarten;Aantal nieuwe opstarten;1;;FALSE;TRUE;TRUE;40;0;LINE;;9
+157;WGK16;1;FALSE;1;POST06;12;Hygiënische zorgen;Gemiddeld aantal patiënten met hygiënische zorgen;1;;FALSE;FALSE;FALSE;;;LINE;;3
+158;WGK17;1;FALSE;1;POST06;12;Diabetesinspuitingen;Gemiddeld aantal patiënten met diabetesinspuitingen;1;;FALSE;FALSE;FALSE;;;LINE;;3
+159;WGK18;1;FALSE;10;POST06;12;STVV;Gemiddeld aantal patiënten met STVV (specifiek technische verpleegkundige verstrekkingen);1;;FALSE;FALSE;FALSE;;;PIE_CHART;;3
+160;WGK19;1;FALSE;1;POST06;12;Complexe wondzorgen;Gemiddeld aantal gepresteerde complexe wondzorgen met bijkomende verstrekkingen;1;;FALSE;FALSE;FALSE;;;LINE;;3
+161;WGK20;3;FALSE;2;POST05;12;Arbeidsongevallen;Arbeidsongevallen;1;;FALSE;TRUE;TRUE;20;0;LINE;;19
+162;WGK21;2;FALSE;1;POST05;12;Nutteloze bezoeken;Gemiddeld aantal nutteloze bezoeken;1;;FALSE;TRUE;TRUE;;;LINE;;20
+163;WGK22;1;FALSE;1;POST01;12;Oproep PHV;Gemiddeld aantal oproepen PHV;1;;FALSE;TRUE;TRUE;;;LINE;;20
+164;WGK23;1;FALSE;1;POST06;12;Tijdsafspraak;Gemiddeld aantal patiënten met tijdsafspraak;1;;FALSE;TRUE;TRUE;;;LINE;;20
+165;WGK24;2;FALSE;1;NO;12;Totaal bezoeken;Totaal aantal bezoeken;1;;FALSE;FALSE;FALSE;;;LINE;;10
+166;WGK25;1;FALSE;4;POST06;12;Structureel geplande interventie;Gemiddeld aantal patiënten met minstens 1 structureel geplande interventie;1;;FALSE;FALSE;FALSE;;;PIE_CHART;;10
+167;WGK26;1;FALSE;1;POST06;12;Langdurige zorgrelatie;Totaal aantal patienten met een langdurige zorgrelatie;1;;FALSE;FALSE;FALSE;;;LINE;;10
+301;AZV1;2;TRUE;;SUR02;4;Relatie artsen;Artsen en (keuze verpleegkundigen, zorgkundige, andre zorgverlener) hebben een goede professionele relatie.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;24
+302;AZV2;2;TRUE;;SUR02;4;Teamwerk artsen;Artsen en (keuze verpleegkundigen, zorgkundige, andre zorgverlener) werken samen als een team.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;24
+303;AZV3;2;TRUE;;SUR02;4;Steun;Mijn directe leidinggevende steunt mij in mijn beslissingen, ook wanneer het een meningsverschil met een arts betreft.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;24
+304;AZV4;2;TRUE;;SUR02;4;Relatie artsen;Mijn directe leidinggevende heeft een goede relatie met de medisch leidinggevende of hoofdarts.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;24
+305;AZV5;2;TRUE;;SUR02;4;Relatie artsen;Mijn directe leidinggevende heeft een goede relatie met de medisch leidinggevende of hoofdarts;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;24
+306;MMO1;2;TRUE;;SUR04;4;Registreren gegevens zorg;Registratie van gegevens betreffende de zorg en patiënten;1;Mean;FALSE;FALSE;FALSE;;;BOXPLOT;24;23
+307;MMO10;2;TRUE;;SUR04;4;Zorg uitscheiding;Zorg i.v.m. uitscheiding / toilet zonder het uitvoeren van handelingen die exclusief toebehoren tot het verpleegkundig beroep;1;Mean;FALSE;FALSE;FALSE;;;BOXPLOT;24;23
+308;MMO2;2;TRUE;;SUR04;4;Checklists;Registratie van gegevens betreffende de werking van de afdeling (bv. invullen checklists);1;Mean;FALSE;FALSE;FALSE;;;BOXPLOT;24;23
+309;MMO3;2;TRUE;;SUR04;4;Accreditatie;Registratie van gegevens in het kader van accreditatie, overheden of andere externe controle-organismen;1;Mean;FALSE;FALSE;FALSE;;;BOXPLOT;24;23
+310;MMO4;2;TRUE;;SUR04;4;Eten rondbrengen;Hoteldiensten: eten rondbrengen;1;Mean;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;24;23
+311;MMO5;2;TRUE;;SUR04;4;Bedden verschonen;Hoteldiensten: bedden verschonen en opdekken (zonder patiënt in het bed);1;Mean;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;24;23
+312;MMO6;2;TRUE;;SUR04;4;Materiaalbeheer;Materiaal nakijken, beheren en aanvullen;1;Mean;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;24;23
+313;MMO7;2;TRUE;;SUR04;4;Schoonmaken;Schoonmaken (exclusief bedden);1;Mean;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;24;23
+314;MMO8;2;TRUE;;SUR04;4;Patiëntentransport;Patiënten transport (intern) waarvoor begeleiding door een verpleegkundige/zorgkundige niet noodzakelijk is;1;Mean;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;24;23
+315;MMO9;2;TRUE;;SUR04;4;Wassen;Wassen van patiënten zonder het uitvoeren van handelingen die exclusief toebehoren tot het verpleegkundig beroep;1;Mean;FALSE;FALSE;FALSE;;;GROUPED_COLUMN;24;23
+316;PAT_12;1;TRUE;;SUR01;4;;Begrijpelijke uitleg van verpleegkundigen;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+317;PAT_13;2;TRUE;;SUR01;4;;Beleefdheid en vriendelijkheid van verpleegkundigen;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+318;PAT_14;2;TRUE;;SUR01;4;;Begrijpelijke uitleg van artsen;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+319;PAT_15;2;TRUE;;SUR01;4;;Beleefdheid en vriendelijkheid van artsen;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+320;PAT_16;1;TRUE;;SUR01;4;;Medewerkers geven gelijkaardige informatie;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+321;PAT_17;3;TRUE;;SUR01;4;;Samenwerking medewerkers;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+322;PAT_18;1;TRUE;;SUR01;4;;Veiligheid bij medewerkers;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+323;PAT_19;1;TRUE;;SUR01;4;;Respect voor privacy tijdens gesprekken;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+324;PAT_20;1;TRUE;;SUR01;4;;Respect voor privacy tijdens onderzoek;1;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;25;10
+325;ZMD11;3;TRUE;;SUR05;4;Zorgvraag niet beantwoord;Bij hoeveel patiënten op uw afdeling opgenomen op ((hier de datum invullen)) schat u dat er zorgvragen niet of onvolledig beantwoord zijn?;0;Mean;TRUE;FALSE;FALSE;;;BOXPLOT;;3
+326;ZMD19;3;TRUE;;SUR00;4;Sleutelrollen ingevuld;De sleutelrollen in het team worden correct ingevuld;1;Mean;FALSE;FALSE;FALSE;;;BOXPLOT;22;19
+327;ZMD20;3;TRUE;;SUR02;4;Accreditatie werkdruk;Ervaren werkdruk door externe invloed (overheid, accreditering) score door leiddinggevende ®;0;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;;20
+328;ZMD21;3;TRUE;;SUR02;4;Tijdsstip artsenronde;Gepaste tijdstip artsenronde score door leiddinggevenden;0;Mediaan;TRUE;FALSE;FALSE;;;BOXPLOT;;12
+329;ZT1;3;TRUE;;SUR02;4;Erkenning en waardering;Mijn collega’s tonen erkenning en waardering voor mijn werk.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+330;ZT10;3;TRUE;;SUR02;4;Problemen worden aangepakt;Problemen in verband met de samenwerking met ondersteunende diensten worden steeds aangepakt door het management.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;13
+331;ZT100;1;TRUE;;SUR02;4;Enthousiasme;Ik ben enthousiast over mijn baan;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+332;ZT101;1;TRUE;;SUR02;4;Depressief;Ik voel me me depressief ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;16
+333;ZT102;1;TRUE;;SUR02;4;Waardeloos;ik voel me waardeloos als iets mislukt  ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;16
+334;ZT103;2;TRUE;;SUR02;4;Grauw & hopeloos;De dingen lijken mij nogal grauw en hopeloos ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;16
+335;ZT104;1;TRUE;;SUR02;4;Inspiratie;Mijn werk inspireert mij;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+336;ZT105;2;TRUE;;SUR02;4;Zin om te werken;Als ik ’s morgens opsta heb ik zin om aan het werk te gaan;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+337;ZT106;2;TRUE;;SUR02;4;Gelukkig op het werk;Wanneer ik heel intensief aan het werk ben, voel ik mij gelukkig;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+338;ZT107;2;TRUE;;SUR02;4;Trots op het werk;Ik ben trots op het werk dat ik doe;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+339;ZT108;2;TRUE;;SUR02;4;Bevlogenheid;Ik ga helemaal op in mijn werk;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+340;ZT109;2;TRUE;;SUR02;4;Vervoering op het werk;Mijn werk brengt mij in vervoering;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+341;ZT11;2;TRUE;;SUR02;4;Gerecht en politie;De samenwerking met gerechtelijke diensten en politie verloopt vlot.*;1;Mediaan;FALSE;FALSE;FALSE;;;BOXPLOT;;13
+342;ZT114;2;TRUE;;SUR02;4;Doelstellingen team;Er zijn consequente en duidelijke doelstellingen binnen het team;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+343;ZT115;2;TRUE;;SUR02;4;Doelstellingen organisatie;Er zijn consequente en duidelijke doelstellingen in deze instelling die de doelstellingen van het team ondersteunen;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;6
+344;ZT116;2;TRUE;;SUR02;4;Communicatie;Frequente en heldere communicatie binnen het team is gangbaar;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+345;ZT12;2;TRUE;;SUR02;4;Ondersteunende diensten;De samenwerking met ondersteunende diensten binnen mijn organisatie lopen vlot.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;13
+346;ZT13;2;TRUE;;SUR02;4;Stress;Ik ervaar stress door mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+347;ZT14;2;TRUE;;SUR02;4;Tijdsdruk;Ik werk onder tijdsdruk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+348;ZT15;2;TRUE;;SUR02;4;Werklast;Er wordt te veel van mij gevraagd. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+349;ZT16;2;TRUE;;SUR02;4;Overzicht;Ik verlies het overzicht over het werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+350;ZT17;2;TRUE;;SUR02;4;Emotionele steun;Ik krijg emotionele steun van mijn teamleden wanneer ik stress ervaar tijdens het werk;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;15
+351;ZT18;2;TRUE;;SUR02;4;Concentratie;Ik kan mij slecht concentreren tijdens het werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+352;ZT19;3;TRUE;;SUR02;4;Vermoeidheid na het werk;Ik ga oververmoeid en niet voldaan naar huis. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+353;ZT2;3;TRUE;;SUR02;4;Rollen en afspraken;Rollen zijn helder en werkafspraken worden nageleefd binnen ons zorgteam;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+354;ZT20;1;TRUE;;SUR02;4;Emoties;Ik ervaar sterke emoties tijdens of na het uitvoeren van mijn werk (bijvoorbeeld een huilbui). ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+355;ZT21;3;TRUE;;SUR02;4;Controle;Ik heb het gevoel dat ik geen controle heb over mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+356;ZT22;1;TRUE;;SUR02;4;Emotionele impact;Ik maak tijdens mijn werk emotioneel aangrijpende situaties mee die een impact hebben op mijn privéleven. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
+357;ZT23;1;TRUE;;SUR02;4;Fysieke klachten;Ik heb last van fysieke klachten die een gevolg zijn van mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;4
+358;ZT24;1;TRUE;;SUR02;4;Houdingen;Ik moet ongemakkelijke en vermoeiende houdingen aannemen. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;4
+359;ZT25;1;TRUE;;SUR02;4;Repetitieve bewegingen;Ik moet repetitieve (steeds herhalende) arm/handbewegingen maken. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;4
+360;ZT26;1;TRUE;;SUR02;4;Zware lasten;Ik moet zware lasten dragen en/of verplaatsen. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;4
+361;ZT27;1;TRUE;;SUR02;4;Hulpmiddelen;Ik kan gebruik maken van hulpmiddelen (bv tillift).;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;4
+362;ZT28;2;TRUE;;SUR02;4;Mentaal uitgeput;Ik voel me mentaal uitgeput door mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;17
+363;ZT29;2;TRUE;;SUR02;4;Opgebrand;Ik voel me 'opgebrand' door mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;17
+364;ZT3;1;TRUE;;SUR02;4;Competente collega’s;Ik werk samen met competente collega’s.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;14
+365;ZT30;2;TRUE;;SUR02;4;Gefrustreerd;Ik voel me gefrustreerd door mijn baan. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;17
+366;ZT31;1;TRUE;;SUR02;4;Werkplek;Mijn werkplek (de fysieke omgeving) laat mij toe mijn werk eenvoudig en efficiënt uit te voeren.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;5
+367;ZT32;1;TRUE;;SUR02;4;Materiaal;Het materiaal dat ik nodig heb om mijn werk uit te voeren is eenvoudig terug te vinden.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;5
+368;ZT33;1;TRUE;;SUR02;4;Afstand;Ik moet grote afstanden te voet afleggen om mijn werk te kunnen doen. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;5
+369;ZT34;1;TRUE;;SUR02;4;Materiaal verzamelen;Als ik een bepaalde handeling moet uitvoeren, moet ik op verschillende plaatsen zijn om materiaal te verzamelen. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;5
+370;ZT35;1;TRUE;;SUR02;4;Concentreren;Op momenten waar ik mij moet concentreren kan ik een prikkel en geluidsarme omgeving opzoeken (bv. briefing in een apart lokaal).;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;5
+371;ZT36;1;TRUE;;SUR02;4;Werkomgeving;Mijn werkomgeving is aangepast aan de soort zorg die ik moet verlenen.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;5
+372;ZT37;1;TRUE;;SUR02;4;Standaardprocedures;Een gestandaardiseerd beleid, standaardprocedures en regels bestaan en worden toegepast;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;11
+373;ZT38;1;TRUE;;SUR02;4;Zorgplannen;Er zijn geschreven, recente zorgplannen beschikbaar voor alle patiënten.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;11
+374;ZT39;1;TRUE;;SUR02;4;Up-to-data materiaal;Ik werk met recent en up-to-date materiaal.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;2
+375;ZT4;1;TRUE;;SUR02;4;Conflicten;Sluimerende soms openlijke conflicten beheersen de teamsfeer ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;12
+376;ZT40;2;TRUE;;SUR02;4;Software;De software die ik dagelijks gebruik is gebruiksvriendelijk.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;2
+377;ZT41;1;TRUE;;SUR02;4;Computer;Ik verlies weinig tijd door het gebruik van de computer.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;2
+378;ZT42;1;TRUE;;SUR02;4;Apparatuur;Ik heb steeds de nodige apparatuur tot mijn beschikking om mijn werk kwaliteitsvol uit te voeren.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;2
+379;ZT43;1;TRUE;;SUR02;4;Gebrek apparatuur;Ik kan soms de patiënten niet optimaal verzorgen door het gebrek aan apparatuur. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;2
+380;ZT44;1;TRUE;;SUR02;4;Gebruiksartikelen;Gebruiksartikelen (bv. pampers, infusen, verbanden, ontsmettingsalcohol, …) zijn steeds voldoende beschikbaar.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;2
+381;ZT45;2;TRUE;;SUR02;4;Steun;Mijn directe leidinggevende steunt mij.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+382;ZT46;1;TRUE;;SUR02;4;Luistert;Mijn directe leidinggevende luistert naar mij.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+383;ZT47;1;TRUE;;SUR02;4;Visie;Ik ken de visie van mijn directe leidinggevende op zorg.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+384;ZT48;1;TRUE;;SUR02;4;inspirerend;Mijn directe leidinggevende is inspirerend.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+385;ZT49;1;TRUE;;SUR02;4;Vertrouwen;Mijn directe leidinggevende vertrouwt mij.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+386;ZT5;1;TRUE;;SUR02;4;Teamwerk ;Er is veel teamwerk tussen de medewerkers onderling.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+387;ZT50;2;TRUE;;SUR02;4;Vertrouwen schenden;Ik zal het vertrouwen van mijn directe leidinggevende nooit schenden.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+388;ZT51;1;TRUE;;SUR02;4;Vertrouw leidinggevende;Ik vertrouw mijn directe leidinggevende.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+389;ZT52;1;TRUE;;SUR02;4;Capaciteit;Ik vind dat mijn directe leidinggevende de nodige capaciteiten heeft om het team te leiden.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+390;ZT53;1;TRUE;;SUR02;4;Gelijke behandeling;Mijn directe leidinggevende behandeld alle collega’s gelijk.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+391;ZT54;1;TRUE;;SUR02;4;Bijdragen beslissingen;Ik kan bijdrage tot beslissingen van mijn leidinggevenden;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;1
+392;ZT55;1;TRUE;;SUR02;4;Conflicten;Mijn directe leidinggevende pakt conflicten binnen het team op een goede manier aan.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+393;ZT56;1;TRUE;;SUR02;4;Organisatorische problemen;Mijn directe leidinggevende pakt organisatorische problemen op een goede manier aan.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+394;ZT57;2;TRUE;;SUR02;4;Zichtbaar;Mijn directe leidinggevende is zichtbaar aanwezig op mijn afdeling of binnen mijn team.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+395;ZT58;2;TRUE;;SUR02;4;Beschikbaar;Mijn directe leidinggevende is beschikbaar of bereikbaar als ik hem/haar nodig zou hebben.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+396;ZT59;2;TRUE;;SUR02;4;Uurrooster ;Mijn directe leidinggevende probeert in de mate van het mogelijke rekening te houden met mijn wensen inzake mijn uurrooster.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;7
+397;ZT6;2;TRUE;;SUR02;4;Harmonie;Binnen ons zorgteam heersen éénsgezindheid en harmonie.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+398;ZT60;2;TRUE;;SUR02;4;Conflicten tussen leidinggevenden;Er zijn conflicten tussen leidinggevenden die een belangrijke impact hebben op de werking van het team. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;7
+399;ZT61;2;TRUE;;SUR02;4;Bekend;Ik ken de directie in mijn organisatie.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;6
+400;ZT62;2;TRUE;;SUR02;4;Gesproken met;Ik heb al eens gesproken met een directielid uit mijn organisatie.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;6
+401;ZT63;2;TRUE;;SUR02;4;Vertrouwen;Ik heb vertrouwen in de directie van mijn organisatie.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;6
+402;ZT64;2;TRUE;;SUR02;4;Inspraak;Ik heb het gevoel dat ik inspraak heb in het bestuur van mijn organisatie.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;6
+403;ZT65;2;TRUE;;SUR02;4;Luistert ;De directie van de organisatie luistert naar en beantwoordt de bekommernissen van de medewerkers.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;6
+404;ZT66;2;TRUE;;SUR02;4;Kwaliteitsprogramma;Er is een actief programma rond kwaliteit en patiëntveilighed;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;22;19
+405;ZT67;2;TRUE;;SUR02;4;Aandacht;Binnen ons zorgteam hebben wij erg veel aandacht voor de veiligheid van onze patiënten.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;22;19
+406;ZT68;2;TRUE;;SUR02;4;Projecten;Er lopen momenteel projecten om de veiligheid van zorg te waarborgen.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;22;19
+407;ZT69;2;TRUE;;SUR02;4;Aankaarten;Als ik een onveilige situatie waarneem dan heb ik steeds de mogelijkheid om dit aan te kaarten en wordt hier iets mee gedaan.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;22;19
+408;ZT7;2;TRUE;;SUR02;4;Wij-gevoel;Binnen ons zorgteam heerst een wij-gevoel onder alle medewerkers.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;22;19
+409;ZT70;2;TRUE;;SUR02;4;Onveilig;Ik weet dat er collega’s binnen mijn team zijn die de veiligheid van patiënten niet belangrijk vinden. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;22;19
+410;ZT71;2;TRUE;;SUR02;4;Leren uit fouten;In ons team wordt er geleerd van gemaakte fouten zonder een schuldige aan te wijzen.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;22;19
+411;ZT72;2;TRUE;;SUR02;4;Meldcultuur;Wij melden (bijna) incidenten en vertellen hier open over om de zorgverlening voor patiënten te verbeteren;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;22;19
+412;ZT73;2;TRUE;;SUR02;4;Afwijken van regels;Verantwoord afwijken van bestaande regels, richtlijnen en protocollen wordt besproken;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;11
+413;ZT74;2;TRUE;;SUR02;4;Aanspreken;Ik vind het erg moeilijk om collega’s aan te spreken als ik zie dat ze een ernstige fout maken. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;22;
+414;ZT75;2;TRUE;;SUR02;4;Vaardigheden & capaciteiten;Mijn werk vereist veel vaardigheden en capaciteiten van mij.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;1
+415;ZT76;2;TRUE;;SUR02;4;Blijven leren;In mijn werk is het noodzakelijk om voortdurend te blijven leren.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;1
+416;ZT77;3;TRUE;;SUR02;4;Oplossingen;Op mijn werk heb ik de mogelijkheid om deel te nemen aan de ontwikkeling van nieuwe oplossingen.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;1
+417;ZT78;3;TRUE;;SUR02;4;Werktempo;Het werktempo dat van mij verwacht wordt, is zeer hoog. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;20
+418;ZT79;3;TRUE;;SUR02;4;Moeilijke taken;Vaak zijn de op te lossen taken erg moeilijk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;20
+419;ZT8;2;TRUE;;SUR02;4;Elkaar helpen;Binnen ons zorgteam is er een grote bereidheid om elkaar te helpen.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+420;ZT80;1;TRUE;;SUR02;4;Werkvolume;Ik moet vaak erg veel werk verrichten. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;20
+421;ZT81;2;TRUE;;SUR02;4;Tijdsdruk;Meestal is de tijd te kort, waardoor ik tijdens het werk onder tijdsdruk sta. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;20
+422;ZT82;2;TRUE;;SUR02;4;Toepassen kennis;Wat ik geleerd heb in mijn professionele opleiding, kan ik volledig toepassen in mijn werk.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;1
+423;ZT83;2;TRUE;;SUR02;4;Plannen;Ik kan mijn werk zelfstandig plannen en indelen.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;1
+424;ZT84;2;TRUE;;SUR02;4;Beslissen;Ik moet op mijn werk veel zelfstandige beslissingen nemen.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;1
+425;ZT85;3;TRUE;;SUR02;4;Tegelijkertijd;Bij dit werk moet men teveel zaken tegelijk te doen. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;20
+426;ZT86;3;TRUE;;SUR02;4;Uurrooster ;Ik ben over het algemeen tevreden met mijn uurrooster.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;18
+427;ZT87;2;TRUE;;SUR02;4;Werkverdeling;Ik ben tevreden met de dagelijkse werkverdeling binnen mijn team.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;18
+428;ZT88;2;TRUE;;SUR02;4;Shiften;Ik ben tevreden met de shiften die ik krijg toebedeeld. (enkel afdelingen met shiftwerk);1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;18
+429;ZT89;3;TRUE;;SUR02;4;Geen patiëntenzorg;Ik vind dat ik te veel werk uitvoer dat niet met de rechtstreekse patiëntenzorg te maken heeft. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;8
+430;ZT9;3;TRUE;;SUR02;4;Ondersteunende diensten;De goede samenwerking met de ondersteunende diensten laten mij toe tijd te besteden aan de patiënten.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;13
+431;ZT90;;TRUE;;SUR02;4;Adminstratie;De administratieve belasting op mijn afdeling is onder controle.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;8
+432;ZT91;;TRUE;;SUR02;4;Minder administratie;Ik denk dat het mogelijk is op mijn afdeling om de administratieve belasting te verminderen. ;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;8
+433;ZT92;;TRUE;;SUR06;4;% werktijd aan niet-vpk taken;Ik spendeer ongeveer ((invulveld)) % van mijn werktijd aan niet ((zorgkundige/verpleegkundige, keuze naar gelang respondent)) taken op mijn afdeling.;0;Mean;TRUE;FALSE;FALSE;;;BOXPLOT;;8
+434;ZT93;;TRUE;;SUR06;4;% werktijd admin;Ik spendeer ongeveer ((invulveld)) % van mijn werktijd aan administratieve taken.;0;Mean;TRUE;FALSE;FALSE;;;BOXPLOT;;8
+435;ZT94;;TRUE;;SUR02;4;Work-life;Ik ben tevreden met mijn work-life balance.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;22
+436;ZT95;;TRUE;;SUR05;4;Privé;Ik spendeer dagelijks ongeveer ((invulveld cijfer)) uur aan mijn werk tijdens mijn privétijd.;1;Mediaan;FALSE;FALSE;FALSE;;;BOXPLOT;;22
+437;ZT96;;TRUE;;SUR02;4;Organisatie;Onze dienst is goed en zo voorspelbaar mogelijk georganiseerd;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;20
+438;ZT97;;TRUE;;SUR02;4;Planning;Activiteiten verlopen doorgaans zoals gepland;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;20
+439;ZT98;;TRUE;;SUR02;4;Energie;Op mijn werk bruis ik van energie;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21
+440;ZT99;;TRUE;;SUR02;4;Fit & sterk;Als ik werk voel ik me fit en sterk;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;21

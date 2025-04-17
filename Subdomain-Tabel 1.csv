@@ -1,0 +1,25 @@
+id;name;weight;domainId
+1;Belissingsruimte;1;8
+2;Beschikbaarheid en toestand materiaal;1;2
+3;Complexe en variabele zorg;1;10
+4;Fysieke eisen;1;4
+5;Fysieke werkomgeving;1;2
+6;Leiderschap organisatie;1;1
+7;Leiderschap directe leidinggevende;1;1
+8;Niet-zorgtaken;1;8
+9;Patiëntenflow;1;10
+10;Patiënt en familie;1;3
+11;Richtlijnen en protocollen;1;6
+12;Samenwerken en teamcohesie;1, 1;3, 6
+13;Ondersteunende diensten;1;3
+14;Staffing;1;5
+15;Stress & draagkracht;1;4
+16;Type D;1;5
+17;Burn-out;1;4
+18;Uurrooster & planning;1, 1;5, 9
+19;Veiligheid cultuur;1;7
+20;Werkdruk;1;9
+21;Werkengagement;1;9
+22;Work-life balance;1;9
+23;Zorgtijd;;10
+24;Artsen;1;3
