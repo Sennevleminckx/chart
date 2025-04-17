@@ -117,7 +117,7 @@ def main():
         'ZT101','ZT102','ZT103','ZT13','ZT14','ZT15','ZT16','ZT18','ZT19',
         'ZT20','ZT21','ZT22','ZT23','ZT24','ZT25','ZT26','ZT28','ZT29',
         'ZT30','ZT33','ZT34','ZT4','ZT43','ZT60','ZT70','ZT74','ZT78',
-        'ZT79','ZT80','ZT81','ZT85','ZT89'
+        'ZT79','ZT80','ZT81','ZT85','ZT89','ZT132', 'ZT123', 'ZT121',
     ]
     mask = df_long['question_code'].isin(reverse_items)
     # Assuming scores are integers 1–10
