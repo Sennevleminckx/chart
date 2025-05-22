@@ -430,7 +430,7 @@ Deze worden niet meegestuurd als onderdeel van de MZG registratie maar kunnen we
 
 343;ZT115;2;TRUE;;SUR02;4;Doelstellingen organisatie;Er zijn consequente en duidelijke doelstellingen in deze instelling die de doelstellingen van het team ondersteunen;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;6
 
-344;ZT116;2;TRUE;;SUR02;4;Communicatie;Frequente en heldere communicatie binnen het team is gangbaar;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+344;ZT116;2;TRUE;;SUR02;4;Communicatie;Frequente en heldere communicatie binnen het team is gangbaar;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;11
 
 345;ZT12;2;TRUE;;SUR02;4;Ondersteunende diensten;De samenwerking met ondersteunende diensten binnen mijn organisatie lopen vlot.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;13
 
@@ -448,7 +448,7 @@ Deze worden niet meegestuurd als onderdeel van de MZG registratie maar kunnen we
 
 352;ZT19;3;TRUE;;SUR02;4;Vermoeidheid na het werk;Ik ga oververmoeid en niet voldaan naar huis. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
 
-353;ZT2;3;TRUE;;SUR02;4;Rollen en afspraken;Rollen zijn helder en werkafspraken worden nageleefd binnen ons zorgteam;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;12
+353;ZT2;3;TRUE;;SUR02;4;Rollen en afspraken;Rollen zijn helder en werkafspraken worden nageleefd binnen ons zorgteam;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;11
 
 354;ZT20;1;TRUE;;SUR02;4;Emoties;Ik ervaar sterke emoties tijdens of na het uitvoeren van mijn werk (bijvoorbeeld een huilbui). ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
 
@@ -466,13 +466,13 @@ Deze worden niet meegestuurd als onderdeel van de MZG registratie maar kunnen we
 
 361;ZT27;1;TRUE;;SUR02;4;Hulpmiddelen;Ik kan gebruik maken van hulpmiddelen (bv tillift).;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;4
 
-362;ZT28;2;TRUE;;SUR02;4;Mentaal uitgeput;Ik voel me mentaal uitgeput door mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;17
+362;ZT28;2;TRUE;;SUR02;4;Mentaal uitgeput;Ik voel me mentaal uitgeput door mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
 
-363;ZT29;2;TRUE;;SUR02;4;Opgebrand;Ik voel me 'opgebrand' door mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;17
+363;ZT29;2;TRUE;;SUR02;4;Opgebrand;Ik voel me 'opgebrand' door mijn werk. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
 
 364;ZT3;1;TRUE;;SUR02;4;Competente collega’s;Ik werk samen met competente collega’s.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;14
 
-365;ZT30;2;TRUE;;SUR02;4;Gefrustreerd;Ik voel me gefrustreerd door mijn baan. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;17
+365;ZT30;2;TRUE;;SUR02;4;Gefrustreerd;Ik voel me gefrustreerd door mijn baan. ;1;Mediaan;FALSE;TRUE;TRUE;;;BOXPLOT;;15
 
 366;ZT31;1;TRUE;;SUR02;4;Werkplek;Mijn werkplek (de fysieke omgeving) laat mij toe mijn werk eenvoudig en efficiënt uit te voeren.;1;Mediaan;FALSE;FALSE;TRUE;;;BOXPLOT;;5
 
